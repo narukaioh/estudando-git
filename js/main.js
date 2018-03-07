@@ -16,7 +16,16 @@ window.onload = () => {
         }
     }
 
+    class Veterinario {
+
+        vacinar(Animal) {
+            console.log(`${Animal.nome} foi vacinado.`)
+        }
+    }
+
     function main(){
+        //cria um veterinario
+        let veterinario = new Veterinario()
         // cria um cachorro
         let cachorro = new Cachorro('Johnny')
         let animal = new Animal('Passarinho')
@@ -26,6 +35,7 @@ window.onload = () => {
         cachorro.nome = 'Tobias'
         animal.falar()
         cachorro.falar()
+        veterinario.vacinar(cachorro)
 
     }
 
