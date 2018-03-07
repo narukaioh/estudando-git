@@ -14,7 +14,18 @@ window.onload = () => {
         falar() {
             console.log(`${this.nome} está latindo.`)
         }
+
     }
+    class Gato extends Animal {
+	falar() {
+            console.log(`${this.nome} está miando.`)
+        }        
+	comer(alimento) {
+            console.log(`${this.nome} está comendo ${alimento}.`)
+        }
+
+    }
+
 
     function main(){
         // cria um cachorro
