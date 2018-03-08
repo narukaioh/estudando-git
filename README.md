@@ -10,6 +10,7 @@ git clone [repositorio]
 
 ## adicionando mudanças
 git add .
+
 git add [filename]
 
 ## commitando as mudanças
