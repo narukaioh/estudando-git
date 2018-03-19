@@ -1,39 +1,5 @@
 window.onload = () => {
 
-    class Animal {
-        constructor(nome) {
-            this.nome = nome
-        }
-
-        falar() {
-            console.log(`${this.nome} emite um barulho.`)
-        }
-    }
-
-    class Cachorro extends Animal {
-        falar() {
-            console.log(`${this.nome} está latindo.`)
-        }
-
-    }
-    class Gato extends Animal {
-	falar() {
-            console.log(`${this.nome} está miando.`)
-        }        
-	comer(alimento) {
-            console.log(`${this.nome} está comendo ${alimento}.`)
-        }
-
-    }
-
-
-    class Veterinario {
-
-        vacinar(Animal) {
-            console.log(`${Animal.nome} foi vacinado.`)
-        }
-    }
-
     function main(){
         //cria um veterinario
         let veterinario = new Veterinario()
